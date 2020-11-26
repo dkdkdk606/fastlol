@@ -1,0 +1,2 @@
+# fastlol
+simple lol webpage
