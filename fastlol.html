@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대충 한번 만들어봅시다</title>
+</head>
+
+<body>
+    <h1>일단 다 채워봐</h1>
+    <!--jquery cdn 최신거 그냥 가져옴-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!--jquery ajax 최신거 그냥 가져옴-->
+    <script>$.ajax({
+            method: "GET",
+            url: "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/hide%20on%20bush",
+            data: { 
+                User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+              Accept-Language: "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+             Accept-Charset: "application/x-www-form-urlencoded; charset=UTF-8",
+              Origin: "https://developer.riotgames.com",
+               X-Riot-Token: "RGAPI-29ef669b-018d-4c8f-a825-15b83857cc22"
+
+             }
+        })
+            .done(function (msg) {
+                alert("Data Saved: " + msg);
+            });</script>
+</body>
+
+</html>
+
+<!-- https://shyunku.tistory.com/49?category=855373
+
+  key  RGAPI-29ef669b-018d-4c8f-a825-15b83857cc22 
+
+-->
